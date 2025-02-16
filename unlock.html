@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To the moon and back</title>
+  <style>
+    body {
+      background-color: #ffe6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header {
+      background-color: #f77c7c;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .photos {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .photo {
+      width: 100px;
+      height: 120px;
+      border: 3px dashed #f77c7c;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .button {
+      background-color: #f77c7c;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-size: 18px;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .header {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      .photo {
+        width: 80px;
+        height: 100px;
+      }
+      .button {
+        font-size: 16px;
+        padding: 10px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">🏠 To the moon and back</div>
+  <div class="photos">
+    <div class="photo"><img src="album.jpg" alt="Foto 1" /></div>
+  </div>
+  <a href="song.html" class="button">🔑 Click to unlock it</a>
+</body>
+</html>
